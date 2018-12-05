@@ -42,7 +42,7 @@
  				status = GetStatusData()
  			})
  	
- 		TriggerEvent('esx_customui:updateStatus', GetStatusData(true))
+ 		TriggerEvent('esx_ladderhud:updateBasics', GetStatusData(true))
  	    Citizen.Wait(Config.TickTime)
  	  end
  	end)
