@@ -27,6 +27,7 @@ end)
 
 Citizen.CreateThread(function ()
     while true do
+        Citizen.Wait(250)
         SendNUIMessage({
             show = IsPauseMenuActive(),
             thirst = thirst,
