@@ -14,7 +14,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ]]
 
-local ESX            = nil
+ESX            = nil
 local thirst, hunger = 0, 0
 
 Citizen.CreateThread(function()
