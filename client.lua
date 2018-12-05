@@ -14,16 +14,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ]]
 
-ESX            = nil
 local thirst, hunger = 0, 0
-
-Citizen.CreateThread(function()
-    while ESX == nil do
-        TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-        Citizen.Wait(0)
-    end
-    ESX.UI.HUD.SetDisplay(0.0)
-end)
 
 Citizen.CreateThread(function ()
     while true do
